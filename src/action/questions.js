@@ -7,7 +7,7 @@ import {
 } from "./actionTypes";
 export function fetchQuestions() {
   return (dispatch) => {
-    let url = "http://localhost:8000/api/v1/questions";
+    let url = "http://100.26.169.145/api/v1/questions";
     fetch(url)
       .then((response) => {
         console.log(response);
@@ -22,7 +22,7 @@ export function fetchQuestions() {
 // function to add question
 export function addQuestions(question, topic, tags) {
   return (dispatch) => {
-    let url = `http://localhost:8000/api/v1/insert`;
+    let url = `http://100.26.169.145/api/v1/insert`;
 
     // fetch post request
     fetch(url, {
@@ -42,10 +42,11 @@ export function addQuestions(question, topic, tags) {
   };
 }
 // action creater for search
+// http://100.26.169.145/api/v1/questions
 export function searchQuestions(tagsOrQuery) {
   console.log(tagsOrQuery);
   return (dispatch) => {
-    let url = "http://localhost:8000/api/v1/search/tags";
+    let url = "http://100.26.169.145/api/v1/search/tags";
     fetch(url, {
       method: "POST",
       headers: {
