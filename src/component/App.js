@@ -11,7 +11,6 @@ class App extends Component {
     this.props.dispatch(fetchQuestions());
   }
   render() {
-    console.log("This props", this.props);
     const {
       isVisibleHomePage,
       isVisibleAddButton,
@@ -30,7 +29,7 @@ class App extends Component {
         />
         {isVisibleAddButton && <AddQuestions dispatch={this.props.dispatch} />}
         {showSearchResults ? <div>Search Results...</div> : null}
-        {displayItems.length == 0 ? (
+        {displayItems.length === 0 ? (
           <h3>Question Not Found: Please Enter Valid Query or Tags</h3>
         ) : null}
         {!isVisibleAddButton &&

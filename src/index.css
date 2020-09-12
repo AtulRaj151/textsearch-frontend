@@ -51,18 +51,7 @@ body {
   position: relative;
   top: -1px;
 }
-@media only screen and (max-width: 700px) {
-  .search-container input {
-    height: 43px;
-    width: 250px;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border: none;
-    font-size: 16px;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-}
+
 /* add questions */
 #question-card {
   width: 350px;
@@ -189,4 +178,49 @@ body {
   width: 24%;
   padding: 10px 20px;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 922px) {
+  .search-container input {
+    height: 43px;
+    width: 300px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border: none;
+    font-size: 16px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search-container input {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search-container input {
+    width: 200px;
+  }
+  #add-btn {
+    position: absolute;
+    width: 12%;
+    padding: 5px;
+    left: 86%;
+    font-size: 0.6rem;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  #home-btn {
+    position: absolute;
+    width: 12%;
+    padding: 5px;
+    left: 2%;
+    font-size: 0.8rem;
+    top: 2%;
+    border-radius: 5px;
+    outline: none;
+  }
 }

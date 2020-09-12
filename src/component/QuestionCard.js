@@ -15,8 +15,11 @@ class QuestionCard extends Component {
           <div className="topic">{question.topic}</div>
           <div className="question-description">{question.question}</div>
           <div className="footer">
-            {question.tags.map((tag) => (
-              <div className="tags"> {tag}</div>
+            {question.tags.map((tag, index) => (
+              <div className="tags" key={`tag-${index}`}>
+                {" "}
+                {tag}
+              </div>
             ))}
           </div>
         </div>

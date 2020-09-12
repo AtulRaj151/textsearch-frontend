@@ -4,13 +4,12 @@ import {
   showHomePage,
   showAddQuestionPage,
   fetchQuestions,
-  updateQuestions,
 } from "../action/questions";
 
 class Navbar extends Component {
   handleSearchQuestion = (e) => {
     let tags = document.getElementById("search-box").value;
-    if (tags.length == 0) {
+    if (tags.length === 0) {
       return;
     }
     this.props.dispatch(searchQuestions(tags));
@@ -47,7 +46,7 @@ class Navbar extends Component {
           Home
         </button>
         <div className="search-container">
-          <input id="search-box" />
+          <input id="search-box" placeholder="Search Question or Tags..." />
           <button id="search-btn" onClick={this.handleSearchQuestion}>
             Search
           </button>
