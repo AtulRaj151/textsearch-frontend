@@ -1,5 +1,10 @@
 import { getFormBody } from "../helper/util";
-import { UPDATE_QUESTION } from "./actionTypes";
+import {
+  UPDATE_QUESTION,
+  UPDATE_SEARCH_QUESTION,
+  SHOW_HOME_PAGE,
+  SHOW_ADD_BUTTON,
+} from "./actionTypes";
 export function fetchQuestions() {
   return (dispatch) => {
     let url = "http://localhost:8000/api/v1/questions";
@@ -53,7 +58,8 @@ export function searchQuestions(tagsOrQuery) {
         return response.json();
       })
       .then((data) => {
-        console.log("search data", data);
+        console.log("search data", data.question);
+        dispatch(updateSearchQuestions(data.question));
       });
   };
 }
@@ -61,5 +67,27 @@ export function updateQuestions(question) {
   return {
     type: UPDATE_QUESTION,
     question,
+  };
+}
+
+export function updateSearchQuestions(question) {
+  return {
+    type: UPDATE_SEARCH_QUESTION,
+    question,
+  };
+}
+// action creater to show home  page
+export function showHomePage(val) {
+  return {
+    type: SHOW_HOME_PAGE,
+    isVisibleHomePage: val,
+  };
+}
+
+// action createer to show addQuestionButton
+export function showAddQuestionPage(val) {
+  return {
+    type: SHOW_ADD_BUTTON,
+    isVisibleAddButton: val,
   };
 }

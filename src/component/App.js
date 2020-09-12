@@ -6,14 +6,16 @@ import Navbar from "./Navbar";
 
 class App extends Component {
   componentDidMount() {
-    console.log("component did Mount");
+    //  fetch the all the qustions from api
     this.props.dispatch(fetchQuestions());
   }
   render() {
+    console.log("This props", this.props.question);
+    const { isVisibleHomePage, isVisibleAddButton } = this.props.question;
     return (
       <div>
         <Navbar dispatch={this.props.dispatch} />
-        <AddQuestions dispatch={this.props.dispatch} />
+        {isVisibleAddButton && <AddQuestions dispatch={this.props.dispatch} />}
       </div>
     );
   }

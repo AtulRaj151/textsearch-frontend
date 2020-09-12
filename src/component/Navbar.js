@@ -1,10 +1,22 @@
 import React, { Component } from "react";
-import { searchQuestions } from "../action/questions";
+import {
+  searchQuestions,
+  showHomePage,
+  showAddQuestionPage,
+} from "../action/questions";
 
 class Navbar extends Component {
   handleSearchQuestion = (e) => {
     let tags = document.getElementById("search-box").value;
     this.props.dispatch(searchQuestions(tags));
+  };
+  // handle home button
+  handleHomeButton = (val) => {
+    this.props.dispatch(showHomePage(val));
+  };
+
+  handleAddQuestion = (val) => {
+    this.props.dispatch(showAddQuestionPage(val));
   };
   render() {
     return (
@@ -12,12 +24,14 @@ class Navbar extends Component {
         <button
           id="add-btn"
           className="btn btn-light btn-outline-success btn-block "
+          onClick={() => this.handleAddQuestion(true)}
         >
           Add Question
         </button>
         <button
           id="home-btn"
           className="btn btn-light btn-outline-dark btn-block "
+          onClick={() => this.handleHomeButton(true)}
         >
           Home
         </button>
