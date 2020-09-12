@@ -28,6 +28,7 @@ export default function question(state = initialQuestionState, action) {
       return {
         ...state,
         isVisibleHomePage: false,
+        isVisibleAddButton: false,
       };
     case SHOW_ADD_BUTTON:
       return {

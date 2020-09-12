@@ -136,3 +136,49 @@ body {
   border-radius: 5px;
   outline: none;
 }
+/* question card */
+.q-card {
+  background: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #f1f1f1;
+  display: flex;
+}
+.q-card:not(:first-child) {
+  margin-top: 20px;
+}
+.q-card:last-child {
+  margin-bottom: 50px;
+}
+.q-card .left {
+  flex: 1;
+  margin-top: 3%;
+  font-weight: bold;
+}
+.q-card .right {
+  position: relative;
+  flex: 10;
+}
+.q-card .topic {
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.q-card .question-description {
+  position: relative;
+  top: -5%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  left: 21px;
+  padding: 0;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 24%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}

@@ -4,9 +4,19 @@ import { addQuestions } from "../action/questions";
 class AddQuestions extends Component {
   handleAddQuestion = (e) => {
     e.preventDefault();
+
     let question = document.getElementById("question").value;
     let topic = document.getElementById("topic").value;
     let tags = document.getElementById("tags").value;
+    // handle empty case:
+    if (
+      question.trim().length === 0 ||
+      topic.trim().length === 0 ||
+      tags.length === 0
+    ) {
+      return;
+    }
+
     this.props.dispatch(addQuestions(question, topic, tags));
   };
   render() {
@@ -23,6 +33,7 @@ class AddQuestions extends Component {
                 id="question"
                 placeholder="Enter Question"
                 name="question"
+                required
               />
             </div>
             <div className="form-group">
@@ -32,6 +43,7 @@ class AddQuestions extends Component {
                 id="topic"
                 placeholder="Enter topic"
                 name="topic"
+                required
               />
             </div>
             <div className="form-group">
@@ -41,6 +53,7 @@ class AddQuestions extends Component {
                 id="tags"
                 placeholder="Enter tags"
                 name="tags"
+                required
               />
             </div>
             <button
