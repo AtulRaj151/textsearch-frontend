@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchQuestions } from "../action/questions";
+import AddQuestions from "./AddQuestions";
+import Navbar from "./Navbar";
 
 class App extends Component {
   componentDidMount() {
@@ -8,8 +10,12 @@ class App extends Component {
     this.props.dispatch(fetchQuestions());
   }
   render() {
-    console.log(this.props);
-    return <div> App</div>;
+    return (
+      <div>
+        <Navbar dispatch={this.props.dispatch} />
+        <AddQuestions dispatch={this.props.dispatch} />
+      </div>
+    );
   }
 }
 

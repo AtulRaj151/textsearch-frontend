@@ -1,3 +1,4 @@
+// reducer for search results
 const initialSearchState = {
   result: [],
   showSearchResults: false,
