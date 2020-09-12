@@ -5,9 +5,14 @@ class QuestionCard extends Component {
     const { question, no } = this.props;
     return (
       <div className="q-card">
-        <div className="left">Question:-{no + 1}</div>
+        <div className="left">
+          <div className="left-topic">Topic</div>
+          <div className="left-question">Question:-{no + 1}</div>
+          <div className="left-tags">Tags</div>
+        </div>
+
         <div className="right">
-          <div className="topic">Topic: {question.topic}</div>
+          <div className="topic">{question.topic}</div>
           <div className="question-description">{question.question}</div>
           <div className="footer">
             {question.tags.map((tag) => (
