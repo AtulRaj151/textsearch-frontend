@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { addQuestions } from "../action/questions";
+import { notify } from "./Notification";
 
 class AddQuestions extends Component {
   handleAddQuestion = (e) => {
@@ -18,6 +19,7 @@ class AddQuestions extends Component {
     }
 
     this.props.dispatch(addQuestions(question, topic, tags));
+    notify("Question Added");
   };
   render() {
     return (
