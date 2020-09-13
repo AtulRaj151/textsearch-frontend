@@ -7,8 +7,11 @@ import {
 } from "./actionTypes";
 export function fetchQuestions() {
   return (dispatch) => {
-    let url = "http://100.26.169.145/api/v1/questions";
-    fetch(url)
+    let url = "http://54.156.127.15/api/v1/questions";
+    // let url = "https://rb.gy/o2x8iz";
+    fetch(url, {
+      mode: "cors",
+    })
       .then((response) => {
         console.log(response);
         return response.json();
@@ -22,11 +25,13 @@ export function fetchQuestions() {
 // function to add question
 export function addQuestions(question, topic, tags) {
   return (dispatch) => {
-    let url = `http://100.26.169.145/api/v1/insert`;
+    let url = `http://54.156.127.15/api/v1/insert`;
+    // let url = "https://rb.gy/o2x8iz";
 
     // fetch post request
     fetch(url, {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       },
@@ -46,9 +51,11 @@ export function addQuestions(question, topic, tags) {
 export function searchQuestions(tagsOrQuery) {
   console.log(tagsOrQuery);
   return (dispatch) => {
-    let url = "http://100.26.169.145/api/v1/search/tags";
+    let url = "http://54.156.127.15/api/v1/search/tags";
+
     fetch(url, {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       },
