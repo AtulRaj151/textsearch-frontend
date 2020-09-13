@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/textsearch-frontend/static/css/main.0c80568f.chunk.css",
-    "main.js": "/textsearch-frontend/static/js/main.0f3a60bc.chunk.js",
-    "main.js.map": "/textsearch-frontend/static/js/main.0f3a60bc.chunk.js.map",
+    "main.js": "/textsearch-frontend/static/js/main.a146fdca.chunk.js",
+    "main.js.map": "/textsearch-frontend/static/js/main.a146fdca.chunk.js.map",
     "runtime-main.js": "/textsearch-frontend/static/js/runtime-main.b8579780.js",
     "runtime-main.js.map": "/textsearch-frontend/static/js/runtime-main.b8579780.js.map",
-    "static/js/2.31c06e99.chunk.js": "/textsearch-frontend/static/js/2.31c06e99.chunk.js",
-    "static/js/2.31c06e99.chunk.js.map": "/textsearch-frontend/static/js/2.31c06e99.chunk.js.map",
+    "static/js/2.d10aba39.chunk.js": "/textsearch-frontend/static/js/2.d10aba39.chunk.js",
+    "static/js/2.d10aba39.chunk.js.map": "/textsearch-frontend/static/js/2.d10aba39.chunk.js.map",
     "index.html": "/textsearch-frontend/index.html",
-    "precache-manifest.75570167b56a25d41c75f8813ece3dd9.js": "/textsearch-frontend/precache-manifest.75570167b56a25d41c75f8813ece3dd9.js",
+    "precache-manifest.80815e9df6982d7a77066f4e85e89fa7.js": "/textsearch-frontend/precache-manifest.80815e9df6982d7a77066f4e85e89fa7.js",
     "service-worker.js": "/textsearch-frontend/service-worker.js",
     "static/css/main.0c80568f.chunk.css.map": "/textsearch-frontend/static/css/main.0c80568f.chunk.css.map",
-    "static/js/2.31c06e99.chunk.js.LICENSE.txt": "/textsearch-frontend/static/js/2.31c06e99.chunk.js.LICENSE.txt"
+    "static/js/2.d10aba39.chunk.js.LICENSE.txt": "/textsearch-frontend/static/js/2.d10aba39.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b8579780.js",
-    "static/js/2.31c06e99.chunk.js",
+    "static/js/2.d10aba39.chunk.js",
     "static/css/main.0c80568f.chunk.css",
-    "static/js/main.0f3a60bc.chunk.js"
+    "static/js/main.a146fdca.chunk.js"
   ]
 }
