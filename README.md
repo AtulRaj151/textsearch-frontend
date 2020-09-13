@@ -22,4 +22,11 @@ on a text.
 The passed string should be matched with <Query> OR <Tags> field of Questions and
 if any of these fields of questions has the passed string in them then service / program
 should return the question in the searched result
+   - UI
+    - ![alt text](https://github.com/AtulRaj151/textsearch-frontend/blob/master/src/assets/images/search.PNG)
 
+### Installation
+1. visit  https://github.com/AtulRaj151/textsearch-backend  repo and install in your local system for backend RestAPI
+2. clone this repo : git clone https://github.com/AtulRaj151/textsearch-frontend.git
+3.  npm install
+4.  npm start
