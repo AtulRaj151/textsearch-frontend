@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/textsearch-frontend/static/css/main.0c80568f.chunk.css",
-    "main.js": "/textsearch-frontend/static/js/main.f3d2b3b9.chunk.js",
-    "main.js.map": "/textsearch-frontend/static/js/main.f3d2b3b9.chunk.js.map",
+    "main.js": "/textsearch-frontend/static/js/main.0f3a60bc.chunk.js",
+    "main.js.map": "/textsearch-frontend/static/js/main.0f3a60bc.chunk.js.map",
     "runtime-main.js": "/textsearch-frontend/static/js/runtime-main.b8579780.js",
     "runtime-main.js.map": "/textsearch-frontend/static/js/runtime-main.b8579780.js.map",
     "static/js/2.31c06e99.chunk.js": "/textsearch-frontend/static/js/2.31c06e99.chunk.js",
     "static/js/2.31c06e99.chunk.js.map": "/textsearch-frontend/static/js/2.31c06e99.chunk.js.map",
     "index.html": "/textsearch-frontend/index.html",
-    "precache-manifest.630ca9b27fcf88bb25f4828f577c896d.js": "/textsearch-frontend/precache-manifest.630ca9b27fcf88bb25f4828f577c896d.js",
+    "precache-manifest.fd994c30fcbd15774702862beca9b737.js": "/textsearch-frontend/precache-manifest.fd994c30fcbd15774702862beca9b737.js",
     "service-worker.js": "/textsearch-frontend/service-worker.js",
     "static/css/main.0c80568f.chunk.css.map": "/textsearch-frontend/static/css/main.0c80568f.chunk.css.map",
     "static/js/2.31c06e99.chunk.js.LICENSE.txt": "/textsearch-frontend/static/js/2.31c06e99.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b8579780.js",
     "static/js/2.31c06e99.chunk.js",
     "static/css/main.0c80568f.chunk.css",
-    "static/js/main.f3d2b3b9.chunk.js"
+    "static/js/main.0f3a60bc.chunk.js"
   ]
 }
