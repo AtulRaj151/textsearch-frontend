@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { addQuestions } from "../action/questions";
-import { notify } from "./Notification";
+import { notify, notifyw } from "./Notification";
 
 class AddQuestions extends Component {
   handleAddQuestion = (e) => {
@@ -15,11 +15,15 @@ class AddQuestions extends Component {
       topic.trim().length === 0 ||
       tags.length === 0
     ) {
+      notifyw("Each Fields should be filled");
       return;
     }
 
     this.props.dispatch(addQuestions(question, topic, tags));
     notify("Question Added");
+    document.getElementById("question").value = "";
+    document.getElementById("topic").value = "";
+    document.getElementById("tags").value = "";
   };
   render() {
     return (

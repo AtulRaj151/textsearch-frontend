@@ -5,11 +5,16 @@ import {
   showAddQuestionPage,
   fetchQuestions,
 } from "../action/questions";
+import { notifyw } from "./Notification";
 
 class Navbar extends Component {
+  //  handle search question
   handleSearchQuestion = (e) => {
     let tags = document.getElementById("search-box").value;
     if (tags.length === 0) {
+      //  show notifications
+      notifyw("tags or Query should not be Empty");
+
       return;
     }
     this.props.dispatch(searchQuestions(tags));

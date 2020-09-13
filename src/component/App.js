@@ -29,9 +29,7 @@ class App extends Component {
         />
         {isVisibleAddButton && <AddQuestions dispatch={this.props.dispatch} />}
         {showSearchResults ? <div>Search Results...</div> : null}
-        {displayItems.length === 0 ? (
-          <h3>Question Not Found: Please Enter Valid Query or Tags</h3>
-        ) : null}
+        {displayItems.length === 0 ? <h3>Questions not Found</h3> : null}
         {!isVisibleAddButton &&
           displayItems.map((question, index) => (
             <QuestionCard

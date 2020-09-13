@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class QuestionCard extends Component {
   render() {
+    // store the quetions and question number
     const { question, no } = this.props;
     return (
       <div className="q-card">
