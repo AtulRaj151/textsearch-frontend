@@ -15,6 +15,8 @@ on a text.
       - Query or Question < string > 
       - Topic: <string, enum>
       - Tags: <array<string, enum>
+    - UI
+- ![alt text](https://github.com/AtulRaj151/textsearch-frontend/blob/master/src/assets/images/insert.PNG)
 - Search
   - Service / Program should be able to retrieve the questions based on the string passed.
 The passed string should be matched with <Query> OR <Tags> field of Questions and
